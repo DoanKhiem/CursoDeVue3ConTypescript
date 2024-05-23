@@ -99,3 +99,26 @@ let ninjaTwo: {
   beltColour: string
 };
 ninjaTwo = { name: 'ken', age: 20, beltColour: 'black', /* skills: [] */ }; // error
+
+// Any type
+let ageAny: any;
+ageAny = true;
+console.log(ageAny);
+ageAny = 'hello';
+console.log(ageAny);
+ageAny = { name: 'ken' };
+console.log(ageAny);
+
+
+let mixedAny: any[] = [];
+mixedAny.push(5);
+mixedAny.push('mario');
+mixedAny.push(false);
+console.log(mixedAny);
+
+let ninjaAny: { name: any, age: any };
+ninjaAny = { name: 'yoshi', age: 25 };
+console.log(ninjaAny);
+
+ninjaAny = { name: 25, age: 'yoshi' };
+console.log(ninjaAny);

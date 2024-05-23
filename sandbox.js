@@ -70,3 +70,21 @@ var ninjaOne;
 ninjaOne = { name: 'yoshi', age: 30 };
 var ninjaTwo;
 ninjaTwo = { name: 'ken', age: 20, beltColour: 'black', /* skills: [] */ }; // error
+// Any type
+var ageAny;
+ageAny = true;
+console.log(ageAny);
+ageAny = 'hello';
+console.log(ageAny);
+ageAny = { name: 'ken' };
+console.log(ageAny);
+var mixedAny = [];
+mixedAny.push(5);
+mixedAny.push('mario');
+mixedAny.push(false);
+console.log(mixedAny);
+var ninjaAny;
+ninjaAny = { name: 'yoshi', age: 25 };
+console.log(ninjaAny);
+ninjaAny = { name: 25, age: 'yoshi' };
+console.log(ninjaAny);
