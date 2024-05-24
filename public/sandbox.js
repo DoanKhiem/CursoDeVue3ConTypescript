@@ -113,3 +113,21 @@ const greetUser = (user) => {
 const greetAgain = (user) => {
     console.log(`${user.name} says hello`);
 };
+// Function Signatures
+let greetFunc;
+greetFunc = (name, greeting) => {
+    console.log(`${name} says ${greeting}`);
+};
+let calc;
+calc = (numOne, numTwo, action) => {
+    if (action === 'add') {
+        return numOne + numTwo;
+    }
+    else {
+        return numOne - numTwo;
+    }
+};
+let logDetailsFunc;
+logDetailsFunc = (ninja) => {
+    console.log(`${ninja.name} is ${ninja.age} years old`);
+};

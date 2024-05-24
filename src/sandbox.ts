@@ -162,3 +162,29 @@ const greetUser = (user: objWithName) => {
 const greetAgain = (user: objWithName) => {
   console.log(`${user.name} says hello`);
 }
+
+
+// Function Signatures
+let greetFunc: (a: string, b: string) => void;
+
+greetFunc = (name: string, greeting: string) => {
+  console.log(`${name} says ${greeting}`);
+};
+
+let calc: (a: number, b: number, c: string) => number;
+
+calc = (numOne: number, numTwo: number, action: string): number => {
+  if (action === 'add') {
+    return numOne + numTwo;
+  } else {
+    return numOne - numTwo;
+  }
+}
+
+let logDetailsFunc: (obj: { name: string, age: number }) => void;
+
+type person = { name: string, age: number };
+
+logDetailsFunc = (ninja: person) => {
+  console.log(`${ninja.name} is ${ninja.age} years old`);
+}
