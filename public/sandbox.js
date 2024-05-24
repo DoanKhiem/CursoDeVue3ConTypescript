@@ -89,3 +89,19 @@ ninjaAny = { name: 'yoshi', age: 25 };
 console.log(ninjaAny);
 ninjaAny = { name: 25, age: 'yoshi' };
 console.log(ninjaAny);
+// Function Basics
+let greet;
+// greet = "hello"; // error
+greet = () => {
+    console.log('hello, again');
+};
+const add = (a, b, c = 10) => {
+    console.log(a + b);
+    console.log(c);
+};
+add(5, 10, 20);
+const minus = (a, b) => {
+    return a + b;
+};
+let result = minus(10, 7);
+// result = 'hi'; // error
