@@ -104,4 +104,12 @@ const minus = (a, b) => {
     return a + b;
 };
 let result = minus(10, 7);
-// result = 'hi'; // error
+const logDetails = (uid, item) => {
+    console.log(`${item} has a uid of ${uid}`);
+};
+const greetUser = (user) => {
+    console.log(`${user.name} says hello`);
+};
+const greetAgain = (user) => {
+    console.log(`${user.name} says hello`);
+};
