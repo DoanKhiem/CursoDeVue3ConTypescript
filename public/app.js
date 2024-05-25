@@ -29,3 +29,20 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log(type.value, tofrom.value, details.value, amount.valueAsNumber);
 });
+const me = {
+    name: 'shaun',
+    age: 30,
+    speak(text) {
+        console.log(text);
+    },
+    spend(amount) {
+        console.log('I spent', amount);
+        return amount;
+    },
+    // skills: ['skill1', 'skill2'] // error
+};
+console.log(me);
+const greetPerson = (person) => {
+    console.log('hello', person.name);
+};
+greetPerson(me);
