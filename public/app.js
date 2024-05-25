@@ -5,10 +5,19 @@ const anchor = document.querySelector('a');
 // }
 console.log(anchor === null || anchor === void 0 ? void 0 : anchor.href);
 class Invoice {
-    constructor(c, d, a) {
-        this.client = c;
-        this.details = d;
-        this.amount = a;
+    // readonly client: string;
+    // private details: string;
+    // public amount: number;
+    // constructor(c: string, d: string, a: number) {
+    //   this.client = c;
+    //   this.details = d;
+    //   this.amount = a;
+    // }
+    // or
+    constructor(client, details, amount) {
+        this.client = client;
+        this.details = details;
+        this.amount = amount;
     }
     format() {
         return `${this.client} owes $${this.amount} for ${this.details}`;
@@ -20,10 +29,14 @@ console.log(invOne, invTwo);
 let invoices = [];
 invoices.push(invOne);
 invoices.push(invTwo);
-invOne.client = 'yoshi';
+// invOne.client = 'yoshi'; //error
 invTwo.amount = 400;
 console.log(invOne, invTwo);
 console.log(invoices);
+invoices.forEach(inv => {
+    // inv.client = 'something'; //error
+    console.log(inv.client, inv.amount, inv.format()); //inv.details is private error
+});
 // const form = document.querySelector('form')!;
 const form = document.querySelector('.new-item-form');
 console.log(form.children);
