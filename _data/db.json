@@ -1,0 +1,52 @@
+{
+    "recipes": [
+        {
+            "id": 1,
+            "title": "Spaghetti Carbonara 1",
+            "image": "spaghetti-carbonara.jpg",
+            "time": 30,
+            "description": "Spaghetti Carbonara is a classic pasta dish that is quick, easy, and delicious. It is a simple dish made with spaghetti, eggs, cheese, and bacon. The eggs and cheese create a creamy sauce that coats the pasta, while the bacon adds a smoky, salty flavor. This recipe is perfect for a quick weeknight dinner or a special occasion.",
+            "vegan": true
+        },
+        {
+            "id": 2,
+            "title": "Spaghetti Carbonara 2",
+            "image": "spaghetti-carbonara.jpg",
+            "time": 30,
+            "description": "Spaghetti Carbonara is a classic pasta dish that is quick, easy, and delicious. It is a simple dish made with spaghetti, eggs, cheese, and bacon. The eggs and cheese create a creamy sauce that coats the pasta, while the bacon adds a smoky, salty flavor. This recipe is perfect for a quick weeknight dinner or a special occasion.",
+            "vegan": true
+        },
+        {
+            "id": 3,
+            "title": "Spaghetti Carbonara",
+            "image": "spaghetti-carbonara.jpg",
+            "time": 30,
+            "description": "Spaghetti Carbonara is a classic pasta dish that is quick, easy, and delicious. It is a simple dish made with spaghetti, eggs, cheese, and bacon. The eggs and cheese create a creamy sauce that coats the pasta, while the bacon adds a smoky, salty flavor. This recipe is perfect for a quick weeknight dinner or a special occasion.",
+            "vegan": false
+        },
+        {
+            "id": 4,
+            "title": "Spaghetti Carbonara",
+            "image": "spaghetti-carbonara.jpg",
+            "time": 30,
+            "description": "Spaghetti Carbonara is a classic pasta dish that is quick, easy, and delicious. It is a simple dish made with spaghetti, eggs, cheese, and bacon. The eggs and cheese create a creamy sauce that coats the pasta, while the bacon adds a smoky, salty flavor. This recipe is perfect for a quick weeknight dinner or a special occasion.",
+            "vegan": false
+        },
+        {
+            "id": 5,
+            "title": "Spaghetti Carbonara",
+            "image": "spaghetti-carbonara.jpg",
+            "time": 30,
+            "description": "Spaghetti Carbonara is a classic pasta dish that is quick, easy, and delicious. It is a simple dish made with spaghetti, eggs, cheese, and bacon. The eggs and cheese create a creamy sauce that coats the pasta, while the bacon adds a smoky, salty flavor. This recipe is perfect for a quick weeknight dinner or a special occasion.",
+            "vegan": false
+        },
+        {
+            "id": 6,
+            "title": "Spaghetti Carbonara",
+            "image": "spaghetti-carbonara.jpg",
+            "time": 30,
+            "description": "Spaghetti Carbonara is a classic pasta dish that is quick, easy, and delicious. It is a simple dish made with spaghetti, eggs, cheese, and bacon. The eggs and cheese create a creamy sauce that coats the pasta, while the bacon adds a smoky, salty flavor. This recipe is perfect for a quick weeknight dinner or a special occasion.",
+            "vegan": false
+        }
+    ]
+}
