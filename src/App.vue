@@ -7,6 +7,11 @@
       <h1>{{ taskStore.name }}</h1>
     </header>
 
+    <!-- new task form -->
+    <div class="new-task-form">
+      <TaskForm />
+    </div>
+
     <!-- filer  -->
     <nav class="filter">
       <button @click="filter = 'all'">All tasks</button>
@@ -34,6 +39,7 @@
 <script setup>
 import { ref } from 'vue'
 import TaskDetails from './components/TaskDetails.vue'
+import TaskForm from './components/TaskForm.vue'
 import { useTaskStore } from './stores/TaskStore'
 const taskStore = useTaskStore()
 const filter = ref('all')
