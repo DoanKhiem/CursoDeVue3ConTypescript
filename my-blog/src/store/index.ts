@@ -2,13 +2,14 @@ import { createStore } from "vuex";
 
 const store = createStore({
     state: {
-        points: 4
+        user: null,
     },
     mutations: {
-        updatePoints(state: any, payload: any) {
-            state.points = state.points + payload;
+        setUser(state: any, payload: any) {
+            state.user = payload;
+            console.log('user state updated:', state.user);
         },
-    }
+    },
 });
 
 export default store;

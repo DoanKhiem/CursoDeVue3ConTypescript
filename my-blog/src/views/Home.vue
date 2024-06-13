@@ -1,9 +1,7 @@
 <template>
   <div class="home">
     <!-- vuex basics -->
-    <h2>Points: {{ points }}</h2>
-    <button @click="updatePoints(1)">add a point</button>
-    <button @click="updatePoints(-1)">remove a point</button>
+    
     <div v-for="blog in blogs" :key="blog.id">
       <div class="blog">
         <h3>{{ blog.title }}</h3>
@@ -21,11 +19,12 @@
 </template>
 
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import { useStore } from "vuex";
 const store = useStore();
-const points = computed(() => store.state.points);
-const updatePoints = (points: number) => store.commit('updatePoints', points);
+
+console.log(store.state.user);
+store.commit('setUser', 'Đoàn Khiêm')
 const blogs = ref([
   { title: 'Why Coffee is Better than Tea', id: 1 },
   { title: '...Then I Took an Arrow in the Knee', id: 2 },
