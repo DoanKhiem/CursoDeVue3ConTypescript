@@ -2,17 +2,27 @@ import { createStore } from "vuex";
 
 // firebase import
 import { auth } from "../firebase/config";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "firebase/auth";
 
+const unsub = onAuthStateChanged(auth, (user) => {
+    store.commit('setUser', user);
+    store.commit('setAuthIsReady', true);
+    unsub();
+});
 const store = createStore({
     state: {
         user: null,
+        authIsReady: false,
     },
     mutations: {
         setUser(state: any, payload: any) {
             state.user = payload;
             console.log('user state updated:', state.user);
         },
+        setAuthIsReady(state: any, payload: boolean) {
+            state.authIsReady = payload;
+            console.log('authIsReady state updated:', state.authIsReady);
+        }
     },
     actions: {
         async signUp(context: any, { email, password }: { email: string, password: string }) {
