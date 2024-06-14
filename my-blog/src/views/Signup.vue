@@ -14,12 +14,14 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { useStore } from "vuex";
 
-
+const store = useStore();
 const email = ref('')
 const password = ref('')
 
 const handleSubmit = () => {
   console.log(email.value, password.value)
+  store.dispatch('signUp', { email: email.value, password: password.value })
 }
 </script>
