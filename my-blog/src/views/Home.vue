@@ -8,7 +8,7 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur aspernatur consectetur doloremque sunt
           ducimus enim iure animi fugit nulla et! Perferendis autem deleniti quo eum corrupti reiciendis voluptatem ab
           ducimus?</p>
-        <div class="icons">
+        <div class="icons" v-if="user">
           <span>upvote or downvote this article: </span>
           <span class="material-icons">thumb_up</span>
           <span class="material-icons">thumb_down</span>
@@ -19,7 +19,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import { useStore } from "vuex";
 const store = useStore();
 
@@ -30,4 +30,5 @@ const blogs = ref([
   { title: '...Then I Took an Arrow in the Knee', id: 2 },
   { title: 'Mario vs Luigi, Ultimate Showdown', id: 3 },
 ])
+const user = computed(() => store.state.user)
 </script>
