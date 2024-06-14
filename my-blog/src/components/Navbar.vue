@@ -8,7 +8,7 @@
     <!-- for logged in users -->
     <div>
       <span>Logged in as...</span>
-      <button>Logout</button>
+      <button @click="handleClick">Logout</button>
     </div>
     <!-- for logged out users -->
     <div>
@@ -19,5 +19,14 @@
 </template>
 
 <script setup lang="ts">
+import { ref } from 'vue'
+import { useStore } from "vuex";
+import { useRouter } from 'vue-router'
 
+const store = useStore();
+const router = useRouter();
+const handleClick = () => {
+  store.dispatch('logout')
+  router.push('/login')
+}
 </script>
