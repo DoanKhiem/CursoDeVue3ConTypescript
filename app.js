@@ -1,5 +1,5 @@
 const readline = require('readline');
-const { generateAnswer } = require('./controllers/openaiController');
+const {  generateAnswer, tag, generateImage  } = require('./controllers/openaiController');
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -7,3 +7,5 @@ const rl = readline.createInterface({
 });
 
 rl.question('What is your name? ', generateAnswer);
+rl.question('What is tag name? ', tag);
+rl.question('What is image name? ', generateImage);
