@@ -39,10 +39,12 @@ const openai = new OpenAI({
     apiKey: process.env.OPEN_AI_KEY,
 })
 
-const generateAnswer = async () => {
+const generateAnswer = async (req, res) => {
+    const { title } = req.body;
+
     const response = await openai.chat.completions.create({
         messages: [
-            { role: 'user', content: 'How many colours does a rainbow have' },
+            { role: 'user', content: 'How many colours does a rainbow have' + title },
         ],
         model: 'gpt-3.5-turbo',
     })
@@ -53,7 +55,7 @@ const generateAnswer = async () => {
 const tag = async () => {
     const response = await openai.chat.completions.create({
         messages: [
-            { role: 'user', content: 'How many colours does a rainbow have' },
+            { role: 'user', content: 'How many colours does a rainbow have' + title },
         ],
         model: 'gpt-3.5-turbo',
     })
