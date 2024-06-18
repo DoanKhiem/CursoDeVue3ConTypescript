@@ -14,15 +14,21 @@
 
 // first();
 
-var x = 100;
-var y = 50;
+// var x = 100;
+// var y = 50;
 
-console.log(getSum(x, y));
+// console.log(getSum(x, y));
 
-function getSum(n1, n2) {
-  return n1 + n2;
-}
+// function getSum(n1, n2) {
+//   return n1 + n2;
+// }
 
-var sum1 = getSum(x, y);
-var sum2 = getSum(10, 20);
+// var sum1 = getSum(x, y);
+// var sum2 = getSum(10, 20);
 
+
+setTimeout(() => {
+  console.log('Hello World');
+}, 2000);
+
+console.log('Running...')
