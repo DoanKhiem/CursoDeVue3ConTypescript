@@ -27,8 +27,27 @@
 // var sum2 = getSum(10, 20);
 
 
-setTimeout(() => {
-  console.log('Hello World');
-}, 2000);
+// setTimeout(() => {
+//   console.log('Hello World');
+// }, 2000);
 
-console.log('Running...')
+// console.log('Running...')
+
+let name = "Đoàn Khiêm";
+
+let age = 20;
+
+let person = {
+    name: "Đoàn Khương",
+    age: 40,
+}
+
+let newName = name;
+
+newName = "Đoàn Khoa";
+
+let newPerson = person;
+
+newPerson.name = "Đoàn Xuân Khoa";
+console.log(newPerson);
+console.log(name);
